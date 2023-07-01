@@ -11,54 +11,60 @@
 <body>
     <section class="hypertext">
         <!-- Specify title -->
-        <h1 class="title">
-            Let's discuss on something cool together
-        </h1>
+        <h1 class="title">Let's discuss <br>on something <span class="cool">cool</span> together</h1>
 
         <!-- Specify the info topics -->
-        <p>
-            <img src="images/Vector_mail.png" alt="mail">
-            SaulDesign@gmail.com
-        </p>
-        <p>
-            <img src="images/TelephoneFill.png" alt="phone">
-            +123 456 789
-        </p>
-        <p>
-            <img src="images/Vector.local.png" alt="local">
-            123 Street 456 House
-        </p>
+        <div class="icons">
+            <p>
+                <img src="images/Vector_mail.png" alt="mail">
+                SaulDesign@gmail.com
+            </p>
+            <p>
+                <img src="images/TelephoneFill.png" alt="phone">
+                +123 456 789
+            </p>
+            <p>
+                <img src="images/Vector.local.png" alt="local">
+                123 Street 456 House
+            </p>          
+        </div>
     </section>
-    <section>
+
+
+    <!-- Section for the whiteframe and validations -->
+    <section class="container">
+        <div class="whitecontainer">
+            <form id="validations">
+
+                <h3>I'm insterested in</h3>
+
+                <!-- Interests boxes -->
+                <div class="interests">
+                    <input type="checkbox" name="interest">UI/UX design
+                    <input type="checkbox" name="interest">Web design
+                    <input type="checkbox" name="interest">Graphic design
+                    <input type="checkbox" name="interest">Design system
+                    <input type="checkbox" name="interest">Other
+                </div>
+
+                <!-- User text inputs -->
+                <div class="text">
+                    <p><input type="text">Your name</p>
+                    <p><input type="text">Your email</p>
+                    <p><input type="text">Your message</p>
+                </div>
+                
+                <input type="button" value="Send message">
+            </form>
+        </div>
+    </section>
+
+    <!-- Bottom page icons isertion -->
+    <section class="vectors">
         <img src="images/Vector.facebook.png" alt="facebook">
         <img src="images/Vector.insta.png" alt="instagram">
         <img src="images/Vector.twitter.png" alt="twitter">
     </section>
-
-    <!-- Section for the whiteframe and validations -->
-    <section>
-        <form id="validations">
-
-            <!-- Interests boxes -->
-            <div class="interests">
-                <input type="checkbox" name="interest">UI/UX design
-                <input type="checkbox" name="interest">Web design
-                <input type="checkbox" name="interest">Graphic design
-                <input type="checkbox" name="interest">Design system
-                <input type="checkbox" name="interest">Other
-            </div>
-
-            <!-- User text inputs -->
-            <div class="text">
-                <p><input type="text">Your name</p>
-                <p><input type="text">Your email</p>
-                <p><input type="text">Your message</p>
-            </div>
-            
-            <input type="button" value="Send message">
-        </form>
-    </section>
-    
 
         
 </body>
