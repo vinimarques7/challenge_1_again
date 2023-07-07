@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+/* Full background color */
 body {
+
+    display: flex;
     background-color: #2E0249;
     width: 92rem;
+    transform: scale(0.9);
+    justify-content: space-around;
     
    
 }
 
 
+/* Texts configuration for using */
 .hypertext{
 
     color: #EEEE;
@@ -16,58 +23,149 @@ body {
     
 }
 
-.title{
 
+/* Page title featurings */
+.title{
     display: -ms-flexbox;
     width: 40.375rem;
-    flex-shrink: 0;
-    
-
     font-size: 3rem;
     font-weight: 700;
 }
 
+/* Word cool from the title color change */
 .cool{
-    
     color: #a91079;
 }
 
-.container{
 
-    display: flex;
-    justify-content: flex-end; 
-    /* position: relative; */
-    transform: translateY(-24rem) ;
-    /* transform: translateX(-30); */
-    
-    
+/* BOTTOM PAGE ICONS AREA */
 
+.vector-location{
+    height: 2rem;
+    transform: translate(-38.5rem, 40rem);
 }
 
+.vectors{
+    display: flex;
+    height: 1.5rem;
+    gap: 4rem;
+    width: 1.8125rem;
+    flex-shrink: 0;
+}
+
+.face:hover,.insta:hover, .twit:hover{
+    flex-shrink: 0; 
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+
+
+/* WHITE CONTAINER AREA */
+
+/* White container exterior manipulation */
+.container{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+/* White container interior manipulation */
 .whitecontainer{
     
-    display: inline-flex;
+    display: -ms-flexbox;
     padding: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 13.875rem;    
-    height: 70vh;
+    margin: auto;
+    max-width: auto;
+    min-width: auto;
     
     background: #EEEE;
     border-radius: 3vh;
     right: 100%;
 }
 
+
+
+/* PAGE ICONS BELOW THE TITLE */
+
 .icons{
-    
-    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 700;
+    gap: 0.5rem;
     transform: translateX(2rem);
+    list-style: none;
 }
 
-.vectors{
 
-    gap: 3rem;
+.buttonframe{
+    /* max-width: 2rem; */
+}
+
+/* All Buttons line frame */
+.interests{
+
+    display: flex; 
+    padding: 1rem;
+    /* align-items: flex-start; */
+    gap: 0.625rem;
+    border-radius: 0.5rem;
     
-    transform: translateY(-5rem);
+    
 }
+
+
+/* White container interests buttons containers */
+.buttoncontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    
+    /* max-width: 2rem; */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border-color:  rgba(46, 2, 73, 0.30);
+    cursor: pointer;
+}
+
+
+
+
+
+.buttoncontainer:hover{
+    border-radius: 0.5rem;
+    background-color: #A91079;
+    
+}
+
+
+.inter{
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+
+    color: rgba(46, 2, 73, 0.30);
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.inter:hover{
+    color: #ffff;
+    
+}
+
+
